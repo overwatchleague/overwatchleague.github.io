@@ -1,0 +1,108 @@
+  <!DOCTYPE html>
+<html>
+<title>overwatchleague</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+  <style>
+  .item-text{
+    color: orange
+  }
+  a{
+    text-decoration: none;
+  }
+  </style>
+
+<div class="w3-container">
+  <h2>Overwatch League</h2>
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Intro</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Kijken</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Teams</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo2')">Contact</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2>Intro</h2>
+  <p>
+  Overwatch is een game gemaakt door blizzard. ik speel zelf ook Overwatch. Ik vind het een heel leuk spel en speel het heel veel.
+  ik speel heel veel games maar Overwatch blijft wel echt anders. Ik vind het dus ook heel leuk dat er nu Overwatch League is
+  (eSport eigenlijk gewwon een soort eredivisie maar dan van overwatch in plaats van voetbal). Op deze website ga meer informatie over
+  overwatchleague. Soms noem ik overwatchleague OWL.
+<img src="intro.jpg" alt="foto logo's Teams " height="720" width="1480">
+  </p></div>
+
+<div id="Tokyo2" class="w3-container city">
+  <h2>Contact</h2>
+        <p>
+          Naam: Noah van Potten
+          <br><br>
+          E-mail: Noah.van.Potten@coderclass.nl
+          <br><br>
+          School: Metis montessori lyceum amsterdam oost
+          <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1698.152293727107!2d4.916401863353454!3d52.36169193785099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609711f21356f%3A0x4698c2612bcb276b!2sMetis+Montessori+Lyceum!5e0!3m2!1snl!2snl!4v1507187333515" width="600" height="450" frameborder="0" style="border:9" allowfullscreen></iframe></p>
+  </p></div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2>Waar kijk je overwatchleague</h2>
+    <p>
+    <a class="item-text" href=https://www.twitch.tv/overwatchleague>Twitch</a>,
+    <a class="item-text" href=http://www.mlg.com/>MLG.com</a>
+    en de MLG-app (op <a class="item-text" href=https://itunes.apple.com/us/app/mlg/id840363884?mt=8>IOS</a>
+    en <a class="item-text" href=https://play.google.com/store/apps/details?id=com.mlg&hl=en>Android</a>), en op
+    <a class="item-text" href=https://overwatchleague.com/en-us/>www.overwatchleague.com</a>
+    Je kunt ook games bekijken in de gloednieuwe Overwatch League-app, die nu beschikbaar is voor
+    <a class="item-text" href=https://itunes.apple.com/de/app/overwatch-league/id1244902791?l=en&mt=8>IOS</a> en
+    <a class="item-text" href=https://play.google.com/store/apps/details?id=com.blizzard.owl&hl=en>Android</a>-apparaten.
+    Je kan natuurlijk ook naar Los Angeles gaan en het live gaan bekijken, maar thuis op de bank is ook wel nice.
+    dit is de opstelling in Los Angeles waar al die mensen heen gaan die overwatchleague gaan kijken.
+    <div class="static"><img src="overwatchleague.jpg" alt="stage" height="350" width="700"></div></p>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2>Teams</h2>
+  <ul style="list-style-type:none">
+    <li><h3>Atlantic Division</h3></li>
+    <li>Boston Uprising</li>
+    <li>Florida Mayhem</li>
+    <li>Houston Outlaws</li>
+    <li>London Spitfire</li>
+    <li>New York Excelsior</li>
+    <li>Philadelphia Fusion</li>
+    <li><h3>Pacific Division<h3></li>
+    <li>Dallas Fuel</li>
+    <li>Los Angeles Gladiators</li>
+    <li>Los Angeles Valiant</li>
+    <li>San Francisco Shock</li>
+    <li>Seoul Dynasty</li>
+    <li>Shanghai Dragons</li>
+  </ul>
+  <br><br>
+  <h3>Pacific Division en Atlantic Division</h3>
+    De Pacific Division is de minder goede helft van de league en de Atlantic Division is de betere helft van de league.
+  <br><br>
+  <h3>Regels</h3>
+  <p>Teams zijn tussen zes en twaalf spelers.
+  Er zijn geen regels op wie kan worden ingezet waar, vandaar dat het in Londen gevestigde team (londen Spitfire) een ​​team heeft dat alleen bestaat uit Koreaanse spelers.
+  Spelers jonger dan 18 jaar kunnen contracten tekenen en oefenen, maar kunnen pas in de 18e worden als ze aan het spelen zijn.</p>
+
+  <h3>Logo's</h3>
+  Dit zijn de logo's alle teams in de league:
+  <div class="static"><img src="kaas.png" alt="foto logo's Teams " height="400" width="570"></div>
+</p>
+</div>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+</body>
+</html>
